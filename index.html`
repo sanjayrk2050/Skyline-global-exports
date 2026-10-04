@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHIPYON | Global Trade Sovereignty</title>
+  <meta name="description" content="Premium International Import & Export. Connecting origin to opportunity with cinematic precision.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/shipyon-logo.png">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="cinematic-body">
+
+  <!-- Custom Cinematic Cursor -->
+  <div class="custom-cursor">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <!-- 0. GRAND OPENING: Intro Sequence -->
+  <div class="scene-intro">
+    <div class="intro-overlay">
+      <div class="intro-logo-wrap">
+        <img src="assets/shipyon-logo.png" alt="Shipyon Logo" class="intro-logo">
+        <div class="logo-light-sweep"></div>
+      </div>
+      <div class="intro-text">
+        <span class="intro-line">ESTABLISHING CONNECTION...</span>
+        <span class="intro-line">Sourcing Excellence.</span>
+        <span class="intro-line">Global Sovereignty.</span>
+      </div>
+    </div>
+    <div class="intro-curtain">
+      <div class="curtain-left"></div>
+      <div class="curtain-right"></div>
+    </div>
+  </div>
+
+  <!-- Site Header -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/shipyon-logo.png" alt="Shipyon Logo" class="brand-logo-img">
+        <span class="brand-badge">EXIM</span>
+      </a>
+      <nav class="nav-links-wrapper">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="btn btn-primary magnetic-btn">Request Quote</button>
+        <button class="mobile-toggle" id="mobile-toggle-btn">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO SCENE: Immersive Atmosphere -->
+    <section class="scene-hero">
+      <div class="hero-parallax-bg">
+        <div class="parallax-layer layer-deep"></div>
+        <div class="parallax-layer layer-mid"></div>
+        <div class="parallax-layer layer-front"></div>
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="eyebrow-pill">Sovereign Trade Architecture</span>
+          </div>
+          <h1 class="hero-title">
+            <span class="title-mask">Connecting</span><br>
+            <span class="title-mask">Origin to</span><br>
+            <span class="title-mask accent">Opportunity.</span>
+          </h1>
+          <p class="hero-subtitle">
+            Defining the new standard of international import & export through cinematic precision,
+            uncompromised quality, and global maritime mastery.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#journey" class="btn btn-primary magnetic-btn">Explore Journey</a>
+            <a href="services.html" class="btn btn-outline magnetic-btn">Our Services</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-bottom-fade"></div>
+    </section>
+
+    <!-- 2. THE JOURNEY: Scroll-Driven Narrative -->
+    <section id="journey" class="scene-journey">
+      <div class="container">
+        <div class="journey-intro">
+          <h2 class="section-title">The Shipyon Odyssey</h2>
+          <p class="section-subtitle">A seamless flow from the heart of the origin to the world's most prestigious ports.</p>
+        </div>
+
+        <div class="journey-timeline">
+          <!-- Stage 1: Origin -->
+          <div class="journey-step" data-step="1">
+            <div class="step-visual">
+              <div class="visual-mask">
+                <img src="assets/shipyon-truck-icon.png" alt="Origin Sourcing" class="step-img">
+              </div>
+            </div>
+            <div class="step-content">
+              <span class="step-num">01</span>
+              <h3 class="step-title">Precision Sourcing</h3>
+              <p class="step-desc">We begin at the source, partnering with 500+ verified agrarian cooperatives to ensure peak quality before the first mile.</p>
+            </div>
+          </div>
+
+          <!-- Stage 2: Logistics -->
+          <div class="journey-step" data-step="2">
+            <div class="step-visual">
+              <div class="visual-mask">
+                <img src="assets/shipyon-harbor-docks.jpg" alt="Cold Chain" class="step-img">
+              </div>
+            </div>
+            <div class="step-content">
+              <span class="step-num">02</span>
+              <h3 class="step-title">Cold Chain Mastery</h3>
+              <p class="step-desc">Sophisticated multimodal transit and refrigerated stewardship safeguarding integrity across every nautical mile.</p>
+            </div>
+          </div>
+
+          <!-- Stage 3: Global -->
+          <div class="journey-step" data-step="3">
+            <div class="step-visual">
+              <div class="visual-mask">
+                <img src="assets/shipyon-sunset-containership.jpg" alt="Global Delivery" class="step-img">
+              </div>
+            </div>
+            <div class="step-content">
+              <span class="step-num">03</span>
+              <h3 class="step-title">Global Sovereignty</h3>
+              <p class="step-desc">Direct deep-water berthing and diplomatic customs mastery linking South India to 50+ sovereign markets.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. THE CAPABILITIES: Editorial Grid -->
+    <section class="scene-capabilities">
+      <div class="container">
+        <div class="capabilities-header">
+          <h2 class="section-title">Our Trade Pillars</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="capabilities-grid">
+          <div class="cap-card" data-anim="fade-up">
+            <div class="cap-icon"><span>01</span></div>
+            <h3>Quality Assurance</h3>
+            <p>Hand-inspected at farm-gate and certified at deep-water seaports for uncompromised prestige.</p>
+          </div>
+          <div class="cap-card" data-anim="fade-up">
+            <div class="cap-icon"><span>02</span></div>
+            <h3>Direct Origin</h3>
+            <p>Pure, untainted sourcing through direct alliances with South India's richest fertile soils.</p>
+          </div>
+          <div class="cap-card" data-anim="fade-up">
+            <div class="cap-icon"><span>03</span></div>
+            <h3>Liner Schedules</h3>
+            <p>Predictable, high-frequency sailings ensuring a seamless flow of commodities to global hubs.</p>
+          </div>
+          <div class="cap-card" data-anim="fade-up">
+            <div class="cap-icon"><span>04</span></div>
+            <h3>Customs Mastery</h3>
+            <p>Expedited diplomatic clearance and full phytosanitary compliance across all trade corridors.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/shipyon-logo.png" alt="Shipyon Logo" class="footer-logo">
+          <p>The Gold Standard of International Trade.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="products.html">Products</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 SHIPYON EXIM. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>

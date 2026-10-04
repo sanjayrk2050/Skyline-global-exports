@@ -15,5 +15,8 @@
   "homepage": "https://github.com/RohithLabs/Shipyon#readme",
   "devDependencies": {
     "vite": "^8.3.0"
+  },
+  "dependencies": {
+    "gsap": "^3.15.0"
   }
 }

@@ -52,8 +52,12 @@ export const initFooter = () => {
                 <a href="mailto:skylineglobalexports5@gmail.com" class="footer-link">skylineglobalexports5@gmail.com</a>
               </p>
               <p class="detail-line">
-                <strong>Call:</strong> 
+                <strong>Main Contact:</strong> 
                 <a href="tel:+919786412161" class="footer-link">+91 9786412161</a>
+              </p>
+              <p class="detail-line">
+                <strong>Secondary Number:</strong> 
+                <a href="tel:+916369563839" class="footer-link">+91 6369-563839</a>
               </p>
               <p class="detail-line">
                 <strong>WhatsApp:</strong> 

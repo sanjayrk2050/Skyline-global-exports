@@ -3520,7 +3520,7 @@ body.page-paused *::after {
 
 .standards-cards-deck {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: clamp(1.2rem, 1.8vw, 1.75rem);
   width: 100%;
   max-width: 1360px;
@@ -3528,21 +3528,24 @@ body.page-paused *::after {
   box-sizing: border-box;
   position: relative;
   z-index: 2;
+  justify-content: center;
 }
 
 .standards-card {
   background: #FFFFFF;
   border: 1.5px solid #EAE3D5;
   border-radius: 28px;
-  padding: clamp(1.8rem, 2.2vw, 2.4rem) clamp(1.4rem, 1.8vw, 1.8rem);
+  padding: clamp(1.6rem, 2vw, 2.2rem) clamp(1rem, 1.4vw, 1.5rem);
   box-shadow: 0 4px 18px rgba(160, 140, 110, 0.05);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: auto;
   min-height: auto;
+  width: 100%;
+  min-width: 0;
   box-sizing: border-box;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -3616,7 +3619,7 @@ body.page-paused *::after {
 
 .standards-card-title {
   font-family: var(--font-body, 'Manrope', sans-serif) !important;
-  font-size: clamp(1.28rem, 1.42vw, 1.44rem) !important;
+  font-size: clamp(1.2rem, 1.35vw, 1.44rem) !important;
   font-weight: 800 !important;
   color: #081F15 !important;
   margin: 0 auto 0.85rem auto !important;
@@ -3637,7 +3640,7 @@ body.page-paused *::after {
   color: #52665A;
   margin: 0 auto;
   text-align: center;
-  max-width: 255px;
+  max-width: 100%;
 }
 
 .standards-card-divider,
@@ -3645,14 +3648,14 @@ body.page-paused *::after {
   display: none !important;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1040px) {
   .standards-cards-deck {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.5rem;
   }
   .standards-card {
     aspect-ratio: auto;
-    min-height: 300px;
+    min-height: 280px;
   }
 }
 
@@ -9441,7 +9444,7 @@ body.page-paused *::after {
   background: #FFFFFF;
   border: 1px solid rgba(24, 61, 50, 0.08);
   border-radius: 28px;
-  padding: clamp(3rem, 5.5vw, 4.25rem);
+  padding: clamp(2.25rem, 4.5vw, 3.75rem);
   box-shadow: 0 24px 60px -12px rgba(24, 61, 50, 0.08), 0 4px 16px rgba(0, 0, 0, 0.02);
 }
 
@@ -9483,7 +9486,7 @@ body.page-paused *::after {
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.8rem;
+  gap: 1.4rem;
   margin-bottom: 1.8rem;
 }
 
@@ -9500,21 +9503,25 @@ body.page-paused *::after {
 
 .form-group label {
   position: static !important;
-  display: block !important;
-  font-size: 0.8rem;
+  display: inline-flex !important;
+  align-items: center;
+  font-size: 0.76rem;
   font-weight: 700;
   color: #183D32 !important;
   margin-bottom: 0.55rem;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   top: auto !important;
   left: auto !important;
   pointer-events: auto !important;
+  white-space: nowrap;
 }
 
 .required-star {
   color: #B56F45;
   font-weight: bold;
+  display: inline;
+  margin-left: 0.2rem;
 }
 
 .form-group input,
@@ -9647,7 +9654,7 @@ body.page-paused *::after {
 }
 
 /* RESPONSIVE DESIGN */
-@media (max-width: 960px) {
+@media (max-width: 1040px) {
   .split-contact {
     grid-template-columns: 1fr;
     gap: 3.5rem;
@@ -10376,3 +10383,184 @@ body.page-paused *::after {
     padding: 1.5rem;
   }
 }
+
+/* ==========================================================================
+   GOVERNMENT ACCREDITATIONS & REGULATORY TRUST MARQUEE
+   ========================================================================== */
+.certifications-trust-strip {
+  position: relative;
+  width: 100%;
+  background: #FFFFFF;
+  border-top: 1px solid rgba(24, 61, 50, 0.08);
+  border-bottom: 1px solid rgba(24, 61, 50, 0.08);
+  padding: 2.25rem 0 2rem;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  z-index: 10;
+}
+
+.certifications-trust-strip .container {
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.cert-strip-lead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.cert-strip-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-earthy-accent, #B56F45);
+}
+
+.cert-strip-kicker::before,
+.cert-strip-kicker::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 1px;
+  background-color: rgba(181, 111, 69, 0.4);
+}
+
+.cert-strip-title {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: clamp(1.15rem, 1.8vw, 1.45rem);
+  color: var(--color-botanical-green, #183D32);
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+/* Marquee Scroller Wrapper */
+.cert-marquee-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  user-select: none;
+  mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+}
+
+.cert-marquee-inner {
+  display: flex;
+  width: max-content;
+  animation: certMarqueeScroll 28s linear infinite;
+  will-change: transform;
+}
+
+.cert-marquee-track {
+  display: flex;
+  align-items: center;
+  gap: clamp(3rem, 5.5vw, 5.5rem);
+  padding: 0.5rem clamp(1.5rem, 3vw, 3rem);
+  flex-shrink: 0;
+}
+
+/* Individual Logo Card */
+.cert-logo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  padding: 0.5rem 0.75rem;
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1), filter 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.cert-logo-item img {
+  height: 52px;
+  max-width: 160px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.04));
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1), filter 0.3s ease;
+}
+
+.cert-logo-item.logo-spices img {
+  height: 56px;
+}
+
+.cert-logo-item.logo-fssai img {
+  height: 40px;
+}
+
+.cert-logo-item.logo-msme img {
+  height: 42px;
+}
+
+.cert-logo-item.logo-apeda img {
+  height: 50px;
+}
+
+.cert-logo-item:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+
+.cert-logo-item:hover img {
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.1));
+}
+
+.cert-logo-caption {
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #556B61;
+  margin-top: 0.45rem;
+  white-space: nowrap;
+  opacity: 0.85;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.cert-logo-item:hover .cert-logo-caption {
+  opacity: 1;
+  color: var(--color-botanical-green, #183D32);
+}
+
+@keyframes certMarqueeScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .certifications-trust-strip {
+    padding: 1.75rem 0 1.5rem;
+  }
+  .cert-logo-item {
+    min-width: 120px;
+    padding: 0.35rem 0.5rem;
+  }
+  .cert-logo-item img {
+    height: 44px;
+  }
+  .cert-logo-item.logo-spices img {
+    height: 48px;
+  }
+  .cert-logo-item.logo-fssai img {
+    height: 34px;
+  }
+  .cert-logo-item.logo-msme img {
+    height: 36px;
+  }
+  .cert-logo-item.logo-apeda img {
+    height: 44px;
+  }
+}
+

@@ -1,22 +1,17 @@
 {
-  "name": "shipyon",
-  "version": "1.0.0",
-  "description": "",
-  "main": "OrbitControls.js",
+  "name": "skyline-global-exports",
+  "private": true,
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
-  "bugs": {
-    "url": "https://github.com/RohithLabs/Shipyon/issues"
-  },
-  "homepage": "https://github.com/RohithLabs/Shipyon#readme",
-  "devDependencies": {
-    "vite": "^8.3.0"
-  },
   "dependencies": {
-    "gsap": "^3.15.0"
+    "gsap": "^3.12.5"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
   }
 }

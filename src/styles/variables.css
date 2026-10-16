@@ -1,0 +1,40 @@
+:root {
+  /* Botanical Premium Palette */
+  --color-ivory: #F7F5EF;
+  --color-white: #FFFFFF;
+  --color-botanical-green: #183D32;
+  --color-forest-green: #285844;
+  --color-muted-sage: #A9B8A2;
+  --color-charcoal: #242823;
+  --color-warm-stone: #E5E0D5;
+  --color-earthy-accent: #B56F45;
+  --color-warm-white: #F7F5EF;
+
+  /* Contextual Surface Colors */
+  --color-bg-main: var(--color-ivory);
+  --color-bg-alt: var(--color-warm-stone);
+  --color-text-main: var(--color-charcoal);
+  --color-text-muted: var(--color-forest-green);
+  --color-accent: var(--color-botanical-green);
+  --color-border: rgba(24, 61, 50, 0.12);
+  --color-primary-dark: #0F231D;
+  --color-deep-secondary: #183D32;
+  --color-soft-neutral: #495850;
+  --color-pure-white: #FFFFFF;
+
+  /* Typography */
+  --font-display: 'DM Serif Display', serif;
+  --font-body: 'Manrope', sans-serif;
+
+  /* Refined, Responsive Typography System */
+  --fs-hero: clamp(2.5rem, 5vw, 4.5rem);
+  --fs-major: clamp(2rem, 4vw, 3.25rem);
+  --fs-section: clamp(1.5rem, 3vw, 2.2rem);
+  --fs-card-title: clamp(1.2rem, 2vw, 1.6rem);
+  --fs-body: clamp(1rem, 0.3vw + 0.9rem, 1.125rem);
+  --fs-label: clamp(0.7rem, 0.2vw + 0.6rem, 0.8rem);
+
+  /* Easing */
+  --ease-editorial: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+}

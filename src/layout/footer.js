@@ -61,7 +61,7 @@ export const initFooter = () => {
               </p>
               <p class="detail-line">
                 <strong>WhatsApp:</strong> 
-                <a href="https://wa.me/916369563839" target="_blank" rel="noopener" class="footer-link">+91 6369-563839</a>
+                <a href="https://wa.me/919786412161" target="_blank" rel="noopener" class="footer-link">+91 9786412161</a>
               </p>
               <div class="footer-cta-wrapper" style="margin-top: 1rem;">
                 <a href="/pages/contact.html" class="footer-cta">Request an Export Quote &rarr;</a>

@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ];
 
       const whatsappText = encodeURIComponent(textLines.join('\n'));
-      const whatsappUrl = `https://wa.me/916369563839?text=${whatsappText}`;
+      const whatsappUrl = `https://wa.me/919786412161?text=${whatsappText}`;
 
       if (submitBtn) {
         submitBtn.disabled = true;
